@@ -33,12 +33,14 @@ const randomNumeri = (min, max) => Math.floor(Math.random() * (max - min) + min)
 let min = 0;
 let max = 20;
 
-    for (let i = 0; i <squadre.length; i++) {
-        squadre.punti = randomNumeri(min, max);
-        squadre.falli = randomNumeri(min, max);
+    for (let i = 0; i < squadre.length; i++) {
+        squadre[i].punti = randomNumeri(min, max);
+        squadre[i].falli = randomNumeri(min, max);
 }  
-console.log(squadre.punti);
-console.log(squadre.falli);
+
+console.log(squadre);
+
+
 
 
   
