@@ -19,6 +19,12 @@ const squadre = [
         'nome': 'Cagliari',
         'punti': 0,
         'falli': 0
+    },
+
+    {
+        'nome': 'Juventus',
+        'punti': 0,
+        'falli': 0
     }
 ]
 
@@ -36,5 +42,17 @@ let max = 20;
 
 console.log(squadre);
 
+// Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi 
+// e falli subiti e stampiamo tutto in console.
 
-// Infine usando la destrutturazione creiamo un nuovo array di oggetti i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+let arr = [];
+
+for (let i = 0; i < squadre.length; i++) {
+    const {nome, falli} = squadre[i];
+    arr.push({nome, falli});
+}
+console.log(arr);
+
+
+
+
