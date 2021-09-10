@@ -32,12 +32,9 @@ const squadre = [
 
 const randomNumeri = (min, max) => Math.floor(Math.random() * (max - min) + min);
 
-let min = 0;
-let max = 20;
-
     for (let i = 0; i < squadre.length; i++) {
-        squadre[i].punti = randomNumeri(min, max);
-        squadre[i].falli = randomNumeri(min, max);
+        squadre[i].punti = randomNumeri(0, 20);
+        squadre[i].falli = randomNumeri(0, 15);
 }  
 
 console.log(squadre);
@@ -49,9 +46,30 @@ let arr = [];
 
 for (let i = 0; i < squadre.length; i++) {
     const {nome, falli} = squadre[i];
-    arr.push({nome, falli});
+    arr.push(
+        {
+            nome, 
+            falli
+        }
+    );
+
+    // Oppure: 
+    // for (let i = 0; i < squadre.length; i++) {
+       // const nuovoOggettoSquadra = {
+    //     'nome': nome,
+    //     'falli': falli
+    // }
+    // arr.push(nuovoOggettoSquadra);
+// }
+    // console.log(arr);
 }
 console.log(arr);
+
+
+
+
+
+
 
 
 
