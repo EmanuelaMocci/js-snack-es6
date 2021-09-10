@@ -4,23 +4,20 @@
 
 // FILTER
 
+function funzione(arr, min, max){
+    const posizione = arr.filter(
+        (elementi, index) => {
+        if(index>= min && index <= max ) {
+            return true;
+        }
+        return false;
+        }
+    ); 
+    return posizione;
+}
+
 const lettere = ['a', 'b', 'c', 'd', 'e'];
+let num1 = 1;
+let num2 = 3;
 
-const posizione = lettere.filter((elementi) => {
-    if(elementi>= lettere[2] && elementi <= lettere[4] ) {
-        return true;
-    }
-    return false;
-    }
-);
-console.log(posizione);
-
-
-// function funzione(arr, min, max){
-//     let vuoto = [];
-//     for(let i = min; i <= max; i++){
-//         vuoto.push(arr[i]);
-//     }
-//     return vuoto;
-// } 
-// console.log(funzione(arr, a, b));
+console.log(funzione(lettere, num1, num2));
