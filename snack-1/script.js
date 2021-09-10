@@ -30,6 +30,6 @@ for (let i = 0; i < bici.length; i++) {
 
 
 // Stampare a schermo la bici con peso minore utilizzando destructuring e template literal
-const {nome, peso} = bici;
+const {nome, peso} = pesoMinore;
 
-console.log(`La bici più leggera è ${pesoMinore.nome} e pesa ${pesoMinore.peso}kg`)
+console.log(`La bici più leggera è ${nome} e pesa ${peso}kg`)
